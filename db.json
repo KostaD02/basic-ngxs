@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "title": "Learn ngrx",
+      "done": false,
+      "id": 1
+    },
+    {
+      "title": "Learn ngxs",
+      "done": true,
+      "id": 2
+    },
+    {
+      "title": "Learn rxjs",
+      "done": true,
+      "id": "3"
+    }
+  ]
+}
