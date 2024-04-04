@@ -39,7 +39,7 @@ export class TodoState {
         ctx.patchState({ todos, loading: false });
       }),
       catchError((error) => {
-        ctx.patchState({ error, loading: false });
+        ctx.patchState({ error: error.message, loading: false });
         return EMPTY;
       }),
     );
@@ -66,7 +66,7 @@ export class TodoState {
         });
       }),
       catchError((error) => {
-        ctx.patchState({ error, loading: false });
+        ctx.patchState({ error: error.message, loading: false });
         return EMPTY;
       }),
     );
@@ -87,7 +87,7 @@ export class TodoState {
         });
       }),
       catchError((error) => {
-        ctx.patchState({ error, loading: false });
+        ctx.patchState({ error: error.message, loading: false });
         return EMPTY;
       }),
     );
@@ -106,7 +106,7 @@ export class TodoState {
         });
       }),
       catchError((error) => {
-        ctx.patchState({ error, loading: false });
+        ctx.patchState({ error: error.message, loading: false });
         return EMPTY;
       }),
     );
